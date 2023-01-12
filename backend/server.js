@@ -26,6 +26,7 @@ app.get('/api/values', function (req, res) {
 });
 
 app.post('/api/value', function (req, res, next) {
+    console.log('백엔드 들어옴');
     db.pool.query(
         `INSERT INTO lists (value) VALUES("${req.body.value}")`,
         (err, results, fileds) => {
