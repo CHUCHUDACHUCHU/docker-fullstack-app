@@ -18,7 +18,7 @@ db.pool.query(
     PRIMARY KEY (id)
 )`,
     (err, results, fileds) => {
-        console.log('results', results);
+        console.log('results', err);
     }
 );
 
